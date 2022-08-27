@@ -167,6 +167,7 @@ h1 {
 
 .col-2 {
   background-color: rgb(255, 214, 29);
+  display: flex;
 }
 
 .col-2 img {
@@ -187,7 +188,7 @@ h1 {
 
 h2 {
   font-family: var(--font2);
-  font-weight: bolder;
+  font-weight: 900;
   font-size: 46px;
 }
 
@@ -434,4 +435,121 @@ footer ul li a {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section-wrapper {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .section-wrapper:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  .section-wrapper:nth-of-type(3) {
+    flex-direction: column;
+  }
+
+  .col-2 img {
+    margin-left: auto;
+  }
+
+  .text-wrapper {
+    width: 542px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 110px 0px;
+    text-align: center;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .col-3 {
+    background-color: hsla(7, 99%, 70%, 0.959);
+    background: linear-gradient(
+      90deg,
+      hsla(7, 99%, 70%, 0.959) 49%,
+      hsla(7, 99%, 70%, 0.959) 50%,
+      hsl(7, 76%, 64%) 51%
+    );
+  }
+
+  .col-3 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-4 .text-wrapper {
+    margin-left: auto;
+  }
+
+  .col-5 {
+    background-color: hsla(170, 65%, 40%, 0.438);
+    background: linear-gradient(
+      90deg,
+      hsla(170, 65%, 40%, 0.438) 49%,
+      hsla(170, 65%, 40%, 0.438) 50%,
+      hsla(170, 69%, 38%, 0.438) 51%
+    );
+  }
+
+  .col-5 img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col-5 .text-wrapper {
+    left: 0;
+  }
+
+  .col-6 {
+    background-color: hsla(180, 100%, 50%, 0.911);
+    background: linear-gradient(
+      90deg,
+      hsl(182, 83%, 40%) 0%,
+      hsl(182, 83%, 40%) 50%,
+      hsla(180, 100%, 50%, 0.911) 51%
+    );
+    display: flex;
+  }
+
+  .col-6 img {
+    margin: 0 auto;
+  }
+
+  .col-6 .text-wrapper {
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: 300px;
+  }
+
+  .testimonials {
+    height: auto;
+    padding: 60px 0px;
+  }
+
+  .grid-container {
+    width: 330px;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+    gap: 70px;
+  }
+
+  .grid-item {
+    width: 100%;
+  }
+
+  .grid-item img {
+    margin-bottom: 20px;
+  }
+
+  .grid-item p:nth-of-type(2) {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
 }
