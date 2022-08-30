@@ -464,7 +464,7 @@ ol li a {
     content: "";
     position: absolute;
     right: 0;
-    top: -30px;
+    top: -25px;
     border: 15px solid transparent;
     border-bottom: 15px solid white;
     border-right: 15px solid white;
